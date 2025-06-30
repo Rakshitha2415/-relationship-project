@@ -20,36 +20,45 @@ The final model is deployed through a **Streamlit app**, allowing users to input
 * Responses gathered via a Google Form with **12 questions.**
 * Questions were designed to capture preferences and personality traits.
 * **149 responses** were collected and stored in CSV format.
+  
 **🏷️ 2. Data Labeling**
 * Applied **KMeans Clustering** with k=2 to classify responses as either:
 * ✅ "Match"
 * ❌ "No Match"
 * Used clustering to avoid rule-based bias and reveal natural groupings.
+  
 **🔠 3. Preprocessing**
 * Applied **Label Encoding** to transform categorical answers into numerical format.
 * Chosen for its compactness and order preservation.
+  
 **🧠 4. Model Architecture**
 Developed an Artificial Neural Network (ANN):
 
 * 2 Hidden Layers with **ReLU**
 * **Dropout + Batch Normalization** for regularization
 * **Sigmoid Output Layer** for binary classification
+  
 **💾 5. Model Saving**
 * Trained model saved as: best_model.keras using **Keras**
 * **ModelCheckpoint** used to retain the best performing weights
+  
 **🧪 6. Inference with Streamlit**
 The app (app.py) is built using **Streamlit:**
 
 * Accepts user inputs through a form
 * Uses the trained model to predict compatibility
 * Displays results in real-time
+  
 **✅ How to Run**
+
 1.Clone the repository https://github.com/Rakshitha2415/-relationship-project.git cd Relationship_Project
 
 2.Install required packages
+
 pip install -r requirements.txt
 
 3.Start the Streamlit app
+
 streamlit run app.py
 
 **🚀 Features**
@@ -57,12 +66,16 @@ streamlit run app.py
 * Easy-to-use form interface
 * Model built using real survey data
 * Compact and efficient model inference
+  
 **📁 Repository Structure**
 Relationship_Project/
 
 ├── app.py # Streamlit app for predictions
+
 ├── Assessment - Form Responses.csv # Survey response dataset
+
 ├── requirements.txt # Python dependencies
+
 └── README.md # Project overview
 
 **👥 Author**
