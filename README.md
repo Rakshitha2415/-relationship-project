@@ -4,6 +4,7 @@ Predict relationship  using survey responses with the help of machine learning.
 This project combines **unsupervised** clustering to generate labels and a **supervised Artificial Neural Network (ANN)** to perform the final classification.
 
 **📌 Project Overview**
+
 The **Relationship Project** analyzes answers from a relationship-based questionnaire to predict whether two individuals would make a good match.
 
 **🔗 Pipeline Includes:**
@@ -51,13 +52,13 @@ The app (app.py) is built using **Streamlit:**
   
 **✅ How to Run**
 
-1.Clone the repository https://github.com/Rakshitha2415/-relationship-project.git cd Relationship_Project
+1. Clone the repository https://github.com/Rakshitha2415/-relationship-project.git cd Relationship_Project
 
-2.Install required packages
+2. Install required packages
 
 pip install -r requirements.txt
 
-3.Start the Streamlit app
+3. Start the Streamlit app
 
 streamlit run app.py
 
@@ -71,11 +72,8 @@ streamlit run app.py
 Relationship_Project/
 
 ├── app.py # Streamlit app for predictions
-
 ├── Assessment - Form Responses.csv # Survey response dataset
-
 ├── requirements.txt # Python dependencies
-
 └── README.md # Project overview
 
 **👥 Author**
